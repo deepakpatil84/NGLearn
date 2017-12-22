@@ -1,0 +1,9 @@
+<div>
+    <hr>
+    <div>{{inputValue}}</div>
+    <child [value]="inputValue" (valueChange)="onValueChange($event)"></child>
+    <hr>
+    <div>{{inputValue2}}</div>
+    <child [(value)]="inputValue2"></child>
+  
+</div>
