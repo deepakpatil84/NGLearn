@@ -1,0 +1,13 @@
+<div>
+  <button (click)="toggle()">Toggle</button>
+  <div *ngIf="show">
+     This data will be hidden
+  </div>
+  <hr>
+  <h2>Loop</h2>
+  <ul>
+    <li *ngFor="let item of items; let i = index; let e=even">
+     {{i}} {{item.title}} {{e ? 'even':'odd'}}
+    </li>
+  </ul>
+</div>
