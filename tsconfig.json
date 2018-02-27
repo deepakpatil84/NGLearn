@@ -6,7 +6,9 @@
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,    
+    "experimentalDecorators": true,   
+    "noImplicitThis": true, 
+    "baseUrl": "./src",
     "allowJs": true,
     "target": "es5",
     "typeRoots": [

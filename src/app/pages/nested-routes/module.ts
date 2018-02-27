@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NestedRoutesComponent } from './component';
 import { Page1 } from './page1/page1';
 import { Child } from './page1/child';
+import { TestDirective} from './page1/test.directive/test.directive'
 import { Page2 } from './page2';
 import { FormsModule } from '@angular/forms';
 
@@ -33,6 +34,6 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes),FormsModule],
   exports: [RouterModule],
   providers: [],
-  declarations: [NestedRoutesComponent, Page1, Page2, Child]
+  declarations: [NestedRoutesComponent, Page1, Page2, Child, TestDirective]
 })
 export class NestedRoutesModule {}
