@@ -14,4 +14,8 @@ export class Child {
     this.valueChange.next(this.value)
     this.value = 'test';
   }
+  public setValue(text:string){
+    console.log('text',text);
+    this.value = text;
+  }
 }

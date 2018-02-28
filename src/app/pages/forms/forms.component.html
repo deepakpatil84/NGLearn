@@ -26,6 +26,8 @@
           #age="ngModel">
         <div *ngIf="!age.valid">Required</div>
       </div>
+      <input #box (keyup)="0">
+      <p>{{box.value}}</p>
       
 
     </form>

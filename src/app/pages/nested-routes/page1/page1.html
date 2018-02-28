@@ -2,8 +2,11 @@
     <hr>
     <div>{{inputValue}}</div>
     <child [value]="inputValue" (valueChange)="onValueChange($event)"></child>
+    <button (click)="setValue()">Set Value</button>
     <hr>
     <div>{{inputValue2}}</div>
     <child [(value)]="inputValue2"></child>
-  
+    
 </div>
+<h1 [appTest]="'red'">Hello</h1>
+<h1 [appTest]="'green'">Hello Again</h1>
